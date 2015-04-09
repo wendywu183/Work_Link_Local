@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="1dp"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/activity_vertical_padding">
+
+        <ImageView
+            android:id="@+id/titleIconIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_tab_announce" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/titleIconIV">
+
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/updateTimeTV"
+                android:layout_toStartOf="@+id/updateTimeTV"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="用管理辦法"
+                android:textColor="@color/tab_icon_select"
+                android:textSize="@dimen/font_size_large" />
+
+            <TextView
+                android:id="@+id/contentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/nameTV"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/updateTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="6dp"
+                android:gravity="right"
+                android:text="2015/2/24"
+                android:textColor="@color/tab_icon_select" />
+
+            <LinearLayout
+                android:id="@+id/attachLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contentTV"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/home_announce_attach_shape"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/announce_detail_attach_type_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/announce_detail_attach_type_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:text="PDF"
+                        android:textColor="@color/announce_detail_pdf_color"
+                        android:textSize="@dimen/font_size_larger" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/GB"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/attachTitleTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:textColor="@color/GD"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <TextView
+                        android:id="@+id/fileSizeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:ellipsize="end"
+                        android:textColor="@color/GD"
+                        android:textSize="@dimen/font_size_small" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_account_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <!--layout_width, layout_height, layout_margin maybe be care of different resolution. -->
+        <com.makeramen.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/riv_account_icon"
+            android:layout_width="@dimen/account_icon_width"
+            android:layout_height="@dimen/account_icon_hight"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_defaultuser"
+            app:riv_border_width="0dp"
+            app:riv_corner_radius="@dimen/account_icon_circle_radius"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            app:riv_tile_mode="repeat" />
+
+        <RelativeLayout
+            android:id="@+id/rl_account_online_status_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/riv_account_icon"
+            android:layout_alignRight="@id/riv_account_icon">
+            <!--layout_width, layout_height, maybe be care of different resolution. -->
+            <ImageView
+                android:id="@+id/iv_account_online_status_bg"
+                android:layout_width="@dimen/account_online_status_bg_width"
+                android:layout_height="@dimen/account_online_status_bg_hight"
+                android:layout_centerInParent="true"
+                android:src="@drawable/view_circle_white"/>
+
+            <!--layout_width, layout_height, maybe be care of different resolution. -->
+            <ImageView
+                android:id="@+id/iv_account_online_status"
+                android:layout_width="@dimen/account_online_status_width"
+                android:layout_height="@dimen/account_online_status_hight"
+                android:layout_centerInParent="true"
+                android:src="@drawable/view_circle" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rl_account_icon"
+        android:layout_toRightOf="@id/rl_account_icon"
+        android:layout_toLeftOf="@+id/tv_message_time"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="John"/>
+
+    <TextView
+        android:id="@+id/tv_latest_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/rl_account_icon"
+        android:layout_toLeftOf="@+id/rl_unread_message_layout"
+        android:layout_below="@id/tv_account_name"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/GF"
+        android:text="Message"/>
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rl_account_icon"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/BC"
+        android:text="9:40 pm"/>
+
+    <!--layout_marginTop, layout_marginRight maybe be care of different resolution. -->
+    <RelativeLayout
+        android:id="@+id/rl_unread_message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/tv_message_time"
+        android:layout_alignRight="@id/tv_message_time">
+        <!--the layout_width, layout_height must by different resolution. -->
+        <ImageView
+            android:id="@+id/iv_message_unread_circle_bg"
+            android:layout_width="@dimen/message_unread_circle_bg_width"
+            android:layout_height="@dimen/message_unread_circle_bg_hight"
+            android:background="@drawable/view_circle" />
+        <TextView
+            android:id="@+id/tv_message_unread_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="1" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/contact_expandable_group_divider"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

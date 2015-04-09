@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/contact_group_detail_photo_iv"
+                android:layout_width="@dimen/contact_detail_main_photo"
+                android:layout_height="@dimen/contact_detail_main_photo"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:id="@+id/contact_group_detail_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_group_detail_photo_iv"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/font_size_large"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/contact_group_detail_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_group_detail_name_tv"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="@color/text_hint_gray"
+                android:layout_centerHorizontal="true" />
+
+
+            <ImageView
+                android:id="@+id/contact_group_detail_message_iv"
+                android:layout_width="@dimen/contact_expandable_child_icon_size"
+                android:layout_height="@dimen/contact_expandable_child_icon_size"
+                android:src="@drawable/test_message"
+                android:layout_below="@+id/contact_group_detail_title_tv"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:id="@+id/contact_group_detail_shared_files_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_group_detail_message_iv"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/contact_expandable_group_divider" />
+
+                <ImageView
+                    android:id="@+id/shared_file_icon"
+                    android:layout_width="@dimen/contact_expandable_child_icon_size"
+                    android:layout_height="@dimen/contact_expandable_child_icon_size"
+                    android:src="@drawable/test_message"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/shared_file_icon"
+                    android:layout_toEndOf="@+id/shared_file_icon"
+                    android:text="共享的檔案"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shared_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_group_detail_shared_files_rl"
+                android:paddingBottom="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/contact_expandable_group_divider" />
+
+                <ImageView
+                    android:id="@+id/shared_photo_icon"
+                    android:layout_width="@dimen/contact_expandable_child_icon_size"
+                    android:layout_height="@dimen/contact_expandable_child_icon_size"
+                    android:src="@drawable/test_message"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/shared_photo_icon"
+                    android:layout_toEndOf="@+id/shared_photo_icon"
+                    android:text="共享的圖片"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/item_title"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/contact_detail_item_title_bk"
+                android:layout_below="@+id/shared_photos">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="群組成員"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/group_member_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_title"
+                android:orientation="vertical" />
+
+            <RelativeLayout
+                android:id="@+id/add_group_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group_member_list"
+                android:paddingBottom="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/contact_expandable_group_divider" />
+
+                <ImageView
+                    android:id="@+id/add_group_member_icon"
+                    android:layout_width="@dimen/contact_expandable_child_icon_size"
+                    android:layout_height="@dimen/contact_expandable_child_icon_size"
+                    android:src="@drawable/test_message"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新增群組成員"
+                    android:layout_toRightOf="@+id/add_group_member_icon"
+                    android:layout_toEndOf="@+id/add_group_member_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/announce_type_red" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/contact_detail_item_title_bk"
+                android:layout_below="@+id/add_group_member" />
+
+            <RelativeLayout
+                android:id="@+id/quit_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider1"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/quit_group_icon"
+                    android:layout_width="@dimen/contact_expandable_child_icon_size"
+                    android:layout_height="@dimen/contact_expandable_child_icon_size"
+                    android:src="@drawable/test_message"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退出群組"
+                    android:layout_toRightOf="@+id/quit_group_icon"
+                    android:layout_toEndOf="@+id/quit_group_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/announce_type_red" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/contact_detail_item_title_bk"
+                android:layout_below="@+id/quit_group" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

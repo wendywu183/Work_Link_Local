@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/rl_contact_search_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/im_search_contact_view"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_contact_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_contact_search_layout"
+        android:padding="10dp"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/iv_contact_select"
+            android:layout_width="@dimen/contact_search_hint_icon_width"
+            android:layout_height="@dimen/contact_search_hint_icon_hight"
+            android:paddingTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_choose" />
+
+        <EditText
+            android:id="@+id/et_contact_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_contact_select"
+            android:layout_alignBottom="@id/iv_contact_select"
+            android:layout_toRightOf="@id/iv_contact_select"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:background="@drawable/bg_im_message_input"
+            android:focusable="false"
+            android:textColor="@color/BC"
+            android:textSize="@dimen/font_size_large"
+            android:text="aaaa, bbb, cccc"/>
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/el_contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_contact_select_layout"
+        android:cacheColorHint="@null"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"/>
+
+    <include
+        android:id="@+id/rl_on_data_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/on_data_loading_view"/>
+</RelativeLayout>

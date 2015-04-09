@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_date_indicator_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/black_transparent_roundcorner"
+            android:paddingBottom="2dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:paddingTop="2dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_date_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/im_chat_list_time_today"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_receiver_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+            <!--layout_width, layout_height, layout_margin maybe be care of different resolution. -->
+            <com.makeramen.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/riv_receiver_account_icon"
+                android:layout_width="@dimen/message_account_icon_width"
+                android:layout_height="@dimen/message_account_icon_hight"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_defaultuser"
+                app:riv_border_width="0dp"
+                app:riv_corner_radius="@dimen/message_account_icon_circle_radius"
+                app:riv_mutate_background="true"
+                app:riv_oval="true"
+                app:riv_tile_mode="repeat" />
+
+            <!--layout_marginLeft maybe refine for real icon -->
+            <RelativeLayout
+                android:id="@+id/rl_receiver_message_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/riv_receiver_account_icon">
+
+                <TextView
+                    android:id="@+id/tv_receiver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test"
+                    android:textColor="@color/BA" />
+
+                <TextView
+                    android:id="@+id/tv_recevier_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_receiver_name"
+                    android:text="9:36 am"
+                    android:textColor="@color/GF" />
+            </RelativeLayout>
+
+            <!---->
+            <TextView
+                android:id="@+id/tv_receiver_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_receiver_message_info"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/riv_receiver_account_icon"
+                android:background="@drawable/message_to_me"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="message"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_sender_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible">
+
+            <!--layout_marginRight maybe refine for real icon -->
+            <RelativeLayout
+                android:id="@+id/rl_sender_message_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp">
+                <!-- Icon is fake and the margin maybe need to be refined. -->
+                <ImageView
+                    android:id="@+id/iv_sender_message_reading_status"
+                    android:layout_width="@dimen/message_reading_status_width"
+                    android:layout_height="@dimen/message_reading_status_height"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_im_read" />
+
+                <TextView
+                    android:id="@+id/tv_user_read_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_sender_message_reading_status"
+                    android:textColor="@color/message_read_green"
+                    android:text="(3)"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_sender_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv_user_read_count"
+                    android:text="9:36 am"
+                    android:textColor="@color/GF" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_sender_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rl_sender_message_info"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/message_from_me"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="message"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- only for gap usage -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/rl_content"/>
+</RelativeLayout>

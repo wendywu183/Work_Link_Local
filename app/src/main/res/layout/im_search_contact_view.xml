@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_contact_search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/GC"
+    android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_im_message_input">
+        <ImageView
+            android:id="@+id/iv_contact_search"
+            android:layout_width="@dimen/contact_search_hint_icon_width"
+            android:layout_height="@dimen/contact_search_hint_icon_hight"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_menu_search" />
+
+        <EditText
+            android:id="@+id/et_contact_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_contact_search"
+            android:layout_alignTop="@id/iv_contact_search"
+            android:layout_toRightOf="@id/iv_contact_search"
+            android:background="@drawable/bg_im_message_input"
+            android:hint="@string/im_start_chat_contact_search_hint"
+            android:textSize="@dimen/font_size_large" />
+    </RelativeLayout>
+</RelativeLayout>

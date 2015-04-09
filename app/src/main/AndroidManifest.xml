@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.centraltrillion.worklink"
+    android:versionName="0.0.1">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".WorkLinkApplication"
+        android:allowBackup="true"
+        android:anyDensity="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBase" >
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBase"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.NoticeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.AnnounceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.OtherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ImStartChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <provider
+            android:name=".utils.im.ImProvider"
+            android:authorities="com.centraltrillion.worklink.im.provider"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.ImMessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.ImChatListSearchResultActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.ContactGroupDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ContactMemberDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".utils.FileDownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".utils.gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.centraltrillion.worklink" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".utils.AttachFileOpenProvider"
+            android:authorities="com.centraltrillion.worklink.utils.AttachFileOpenProvider"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".utils.gcm.GCMIntentService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".view.FilePreviewActivity"
+            android:label="@string/title_activity_file_preview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.PhotoUploadActivity"
+            android:label="@string/title_activity_photo_upload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.CompanyDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.CompanyMapActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDMimSKTsGwHVKP4ptBKwIwaVf8ESW11WQ" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".view.NoticeSendActivity"
+            android:label="@string/title_activity_announce_add" >
+        </activity>
+        <activity
+            android:name=".view.ContactChooserActivity"
+            android:label="@string/title_activity_contact_chooser" >
+        </activity>
+    </application>
+
+</manifest>

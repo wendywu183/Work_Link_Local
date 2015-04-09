@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/item_text_layouot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/item_photo"
+        android:layout_toStartOf="@+id/item_photo">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_small"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginStart="@dimen/activity_horizontal_padding"
+            android:textColor="@color/contact_detail_item_subtitle"/>
+
+        <TextView
+            android:id="@+id/item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/item_title"
+            android:textSize="@dimen/font_size_medium"
+            android:textColor="@color/contact_detail_item_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginStart="@dimen/activity_horizontal_padding" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/item_photo"
+        android:layout_width="@dimen/contact_expandable_child_icon_size"
+        android:layout_height="@dimen/contact_expandable_child_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/contact_expandable_group_divider"
+        android:layout_below="@+id/item_text_layouot"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

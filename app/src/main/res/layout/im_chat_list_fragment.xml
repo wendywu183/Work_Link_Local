@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/rl_contact_search_layout"
+        layout="@layout/im_search_contact_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ExpandableListView
+        android:id="@+id/elv_chat_list_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_contact_search_layout"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_contact_search_layout"
+        android:background="@color/white"
+        android:scrollbars="vertical"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_empty_chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+        <!--ic_empty_conversation is test icon-->
+        <ImageView
+            android:id="@+id/iv_empty_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_empty_chat_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@null"
+            android:src="@drawable/ic_empty_conversation" />
+
+        <TextView
+            android:id="@+id/tv_empty_chat_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/im_chat_list_empty"
+            android:textColor="@color/text_hint_gray" />
+
+        <TextView
+            android:id="@+id/tv_start_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_empty_chat_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_bg_blue_shape"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/im_chat_list_start_chat"
+            android:textColor="@color/BB" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/rl_on_data_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/on_data_loading_view"/>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="WORK_LINK_SERVER">http://api.centraltrillion.com/%1$s</string>-->
+    <string name="WORK_LINK_SERVER">http://devapi.centraltrillion.com/%1$s</string>
+    <!--<string name="IM_SERVER">http://im.centraltrillion.com/%1$s</string>-->
+    <string name="IM_SERVER">http://devim.centraltrillion.com/%1$s</string>
+    <!--<string name="GCM_SERVER">http://devpush.centraltrillion.com/%1$s</string>-->
+    <string name="GCM_SERVER">http://devcowabunga.centraltrillion.com/%1$s</string>
+    <string name="COWABUNGA_SERVER">http://devcowabunga.centraltrillion.com/%1$s</string>
+
+    <string name="api_get_all_contact_group">worklink/contact-group/start/%1$s/count/%2$s/company/%3$s</string>
+    <string name="api_contact_group_detail">worklink/contact-group/%1$s/start/%2$s/count/%3$s/company/%4$s</string>
+    <string name="api_get_user_other_data">worklink/user/%1$s</string>
+    <string name="api_get_announce">worklink/announcements/%1$s/company/%2$s</string>
+    <string name="api_get_announce_all_list">worklink/announcement/all/last/%1$s/count/%2$s/company/%3$s</string>
+    <string name="api_post_token">worklink/token</string>
+    <string name="api_post_login">worklink/user/login</string>
+    <string name="api_get_user_chat_list">chat/$1$s/chatlist</string>
+    <string name="api_post_multiple_chat_create">multiple/create</string>
+    <string name="api_post_multiple_chat_invite">multiple/invite</string>
+    <string name="api_post_multiple_chat_quit">multiple/quit</string>
+    <string name="api_post_create_device_id">device-id</string>
+    <string name="api_post_add_favorite">/worklink/contact-group/add</string>
+    <string name="api_post_delete_favorite">/worklink/contact-group/delete</string>
+    <string name="api_get_functions">worklink/function-list/company/%1$s</string>
+    <string name="api_get_companyinfo">worklink/company/%1$s</string>
+    <string name="api_post_file">upload/attachments</string>
+    <string name="api_put_personal_info">worklink/user/%1$s</string>
+    <string name="api_get_notice_inbox_list">worklink/notice/last/%1$s/count/%2$s/company/%3$s/inbox</string>
+    <string name="api_get_notice_outbox_list">worklink/notice/last/%1$s/count/%2$s/company/%3$s/outbox</string>
+    <string name="api_get_notice_starred_list">worklink/notice/last/%1$s/count/%2$s/company/%3$s/starred</string>
+    <string name="api_post_new_notice">worklink/notice</string>
+
+    <string name="api_post_register_push_to_server">register_device</string>
+    <string name="forget_password_url">http://devapi.centraltrillion.com/</string>
+    <string name="file_preview_google_viewer_url">https://docs.google.com/viewer?url=</string>
+
+    <string name="get_main_page">worklink/main-page/company/%1$s</string>
+    <string name="get_announce">worklink/announcements/all/start/%1$s/count/%2$s/company/%3$s</string>
+    <string name="get_notice_list">worklink/notice/start/%1$s/count/%2$s/company/%3$s</string>
+    <string name="get_message">worklink/message/start/%1$s/count/%2$s/company/%3$s</string>
+
+    <string name="api_get_update_time">worklink/update-time/company/%1$s</string>
+
+    //new API
+    <string name="api_get_user_basic_info">worklink/user</string>
+</resources>

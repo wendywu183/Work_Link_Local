@@ -1,0 +1,103 @@
+<resources>
+
+    <!--screen padding-->
+    <dimen name="activity_horizontal_padding">15dp</dimen>
+    <dimen name="activity_vertical_padding">15dp</dimen>
+
+    <!--Tab-->
+    <dimen name="tab_icon_padding">8dp</dimen>
+    <dimen name="tab_indicator_height">6dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- contact_list_item_view.xml -->
+    <dimen name="name_text_size">16sp</dimen>
+
+    <!-- view_conversion_list_item.xml && im_message_list_item_view.xmlw.xml-->
+    <dimen name="account_icon_width">50dp</dimen>
+    <dimen name="account_icon_hight">50dp</dimen>
+    <dimen name="account_icon_circle_radius">30dp</dimen>
+
+    <!-- im_message_list_item_view.xmlw.xml -->
+    <dimen name="message_account_icon_width">50dp</dimen>
+    <dimen name="message_account_icon_hight">50dp</dimen>
+    <dimen name="message_account_icon_circle_radius">30dp</dimen>
+    <dimen name="message_reading_status_width">12dp</dimen>
+    <dimen name="message_reading_status_height">12dp</dimen>
+
+    <!-- view_conversion_list_item.xml-->
+    <dimen name="account_online_status_bg_hight">15dp</dimen>
+    <dimen name="account_online_status_bg_width">15dp</dimen>
+    <dimen name="account_online_status_hight">10dp</dimen>
+    <dimen name="account_online_status_width">10dp</dimen>
+    <dimen name="message_unread_circle_bg_hight">20dp</dimen>
+    <dimen name="message_unread_circle_bg_width">20dp</dimen>
+
+    <!-- im_message_activity-->
+    <dimen name="message_input_layout_hight">50dp</dimen>
+    <dimen name="message_input_min_hight">40dp</dimen>
+
+    <!-- im_start_chat_activity-->
+    <dimen name="contact_search_hint_icon_hight">40dp</dimen>
+    <dimen name="contact_search_hint_icon_width">40dp</dimen>
+
+    <!-- im_message_option_item_view.xmlxml -->
+    <dimen name="chat_option_grid_item_hight">80dp</dimen>
+    <dimen name="chat_option_bottom_line_hight">0.2dp</dimen>
+    <dimen name="chat_option_right_line_width">0.2dp</dimen>
+
+    <!--common-->
+    <dimen name="font_size_smaller">10sp</dimen>
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_medium">14sp</dimen>
+    <dimen name="font_size_large">16sp</dimen>
+    <dimen name="font_size_larger">18sp</dimen>
+
+    <!--contact-->
+    <dimen name="contact_expandable_group_height">20dp</dimen>
+    <dimen name="contact_expandable_group_expand_icon_size">15dp</dimen>
+    <dimen name="contact_expandable_child_photo_size">50dp</dimen>
+    <dimen name="contact_expandable_child_icon_size">30dp</dimen>
+    <dimen name="contact_expandable_list_horizontal_padding">15dp</dimen>
+    <dimen name="contact_expandable_list_vertical_padding">15dp</dimen>
+    <dimen name="contact_detail_main_photo">120dp</dimen>
+    <dimen name="contact_member_detail_option_icon_size">35dp</dimen>
+
+    <!--announce-->
+    <dimen name="announce_list_item_padding_vertical">7dp</dimen>
+    <dimen name="announce_list_item_attach_icon">20dp</dimen>
+    <dimen name="announce_spinner_row_padding">10dp</dimen>
+    <dimen name="announce_detail_title_padding">15dp</dimen>
+    <dimen name="announce_detail_attach_icon_size">15dp</dimen>
+
+    <!-- notice -->
+    <dimen name="notice_list_item_padding_vertical">7dp</dimen>
+    <dimen name="notice_send_edit_receiver_icon_size">20dp</dimen>
+    <dimen name="notice_detail_photo_size">70dp</dimen>
+
+    <!--home-->
+    <dimen name="home_user_photo_horizontal_padding">30dp</dimen>
+    <dimen name="home_layout_margin">15dp</dimen>
+    <dimen name="home_account_icon_width">38dp</dimen>
+    <dimen name="home_online_status_bg_hight">10dp</dimen>
+    <dimen name="home_online_status_hight">7dp</dimen>
+
+    <!--company-->
+    <dimen name="company_detail_padding">10dp</dimen>
+    <dimen name="company_detail_center_button_width">30dp</dimen>
+    <dimen name="company_intro_lineSpacingExtra">5dip</dimen>
+
+    <!--login-->
+    <dimen name="login_logo_text_size">30sp</dimen>
+    <dimen name="login_icon_text_margin">15dp</dimen>
+    <dimen name="login_insert_layout_margin">50dp</dimen>
+    <dimen name="login_email_icon_size">16dp</dimen>
+    <dimen name="login_button_padding">15dp</dimen>
+    <dimen name="login_button_margin_top">30dp</dimen>
+
+    <!--photo upload -->
+    <dimen name="photo_upload_icon_size">40dp</dimen>
+</resources>

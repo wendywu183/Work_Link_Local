@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.WorkLink</item>
+        <item name="android:actionBarTabBarStyle">@style/TabBarStyle</item>
+    </style>
+
+    <!--ActionBar Style-->
+    <style name="ActionBar.Solid" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">@color/actionBarBgColor</item>  <!--actionBarBgColor-->
+        <item name="android:backgroundStacked">@color/tabBgColor</item> <!--tabBgColor-->
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <!-- ActionBar Title text -->
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionBarTitleColor</item>  <!--ActionBarTitleColor-->
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--ActionBar Tab Style (tab underline)-->
+    <style name="ActionBarTabStyle.WorkLink" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--ActionBar Tab divider-->
+    <style name="TabBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.TabBar">
+        <item name="android:dividerHeight">24dp</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:divider">@null</item>
+        <!--<item name="android:background">@drawable/tab_unselected</item>-->
+    </style>
+
+</resources>

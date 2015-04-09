@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/notice_detail_title_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/notice_detail_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginStart="@dimen/activity_horizontal_padding"
+            android:layout_centerVertical="true"
+            android:textColor="@color/list_not_read_blue"
+            android:textSize="@dimen/font_size_large" />
+
+        <ImageView
+            android:id="@+id/notice_detail_star_iv"
+            android:layout_width="@dimen/notice_send_edit_receiver_icon_size"
+            android:layout_height="@dimen/notice_send_edit_receiver_icon_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:layout_marginEnd="@dimen/activity_horizontal_padding"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_favorite" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_hint_gray"
+        android:layout_below="@+id/notice_detail_title_rl"
+        android:layout_marginTop="15dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider1"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:id="@+id/notice_detail_all_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginStart="@dimen/activity_horizontal_padding">
+
+            <RelativeLayout
+                android:id="@+id/notice_detail_content_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/notice_detail_sender_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/notice_detail_photo"
+                        android:layout_width="@dimen/notice_detail_photo_size"
+                        android:layout_height="@dimen/notice_detail_photo_size" />
+
+                    <TextView
+                        android:id="@+id/notice_detail_sender_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/notice_detail_photo"
+                        android:layout_toEndOf="@+id/notice_detail_photo"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/list_not_read_blue"
+                        android:textSize="@dimen/font_size_medium"/>
+
+                    <TextView
+                        android:id="@+id/notice_detail_dept_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/notice_detail_sender_tv"
+                        android:layout_toEndOf="@+id/notice_detail_sender_tv"
+                        android:textColor="@color/list_not_read_blue"
+                        android:textSize="@dimen/font_size_small"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <TextView
+                        android:id="@+id/notice_detail_receiver_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/notice_detail_photo"
+                        android:layout_toEndOf="@+id/notice_detail_photo"
+                        android:layout_below="@+id/notice_detail_sender_tv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/text_hint_gray"
+                        android:textSize="@dimen/font_size_smaller"/>
+
+                    <TextView
+                        android:id="@+id/notice_detail_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/notice_detail_photo"
+                        android:layout_toEndOf="@+id/notice_detail_photo"
+                        android:layout_below="@+id/notice_detail_receiver_tv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/text_hint_gray"
+                        android:textSize="@dimen/font_size_small"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/notice_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notice_detail_sender_rl"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="@dimen/font_size_medium" />
+
+                <LinearLayout
+                    android:id="@+id/attachLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/reference_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notice_detail_content_rl" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

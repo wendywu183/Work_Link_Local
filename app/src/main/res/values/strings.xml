@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WorkLink</string>
+    <string name="company_name">中兆匯</string>
+    <string name="enter_text">Please Enter User ID:</string>
+    <string name="login">Login</string>
+    <string name="send">送出</string>
+    <string name="message">message</string>
+    <string name="confirm">確定</string>
+    <string name="cancel">取消</string>
+    <string name="on_data_loading">資料載入中...</string>
+    <string name="no_data">查無資料，請稍候重試</string>
+    <string name="login_token_faild">驗證失效</string>
+
+    <!-- function name -->
+    <string name="func_home">首頁</string>
+    <string name="func_notice">通知</string>
+    <string name="func_contact">通訊錄</string>
+    <string name="func_message">對話</string>
+    <string name="func_announcement">公告</string>
+    <string name="func_company">企業資訊</string>
+    <string name="func_other">更多</string>
+
+    <!-- home item -->
+    <string name="time_morning"> 早上</string>
+    <string name="time_afternoon"> 下午</string>
+    <string name="home_no_data">無其他公告</string>
+
+    <!-- menu -->
+    <string name="menu_search">搜尋</string>
+    <string name="menu_add_group">新增群組</string>
+    <string name="menu_add_notice">新增通知</string>
+    <string name="menu_submit">送出</string>
+
+    <!-- contact -->
+    <string name="search_hint">Search</string>
+    <string name="contact_send_email">寄信</string>
+    <string name="contact_status_1">可聯絡</string>
+    <string name="contact_status_2">休\u0020\u0020\u0020\u0020假</string>
+    <string name="contact_status_3">差\u0020\u0020\u0020\u0020旅</string>
+    <string name="contact_status_4">會\u0020\u0020\u0020\u0020議</string>
+    <string name="contact_status_5">忙\u0020\u0020\u0020\u0020碌</string>
+    <string name="contact_member_detail_contact_info">聯絡方式</string>
+    <string name="contact_member_detail_job_info">職務相關</string>
+    <string name="contact_member_detail_about_info">關於我</string>
+    <string name="contact_member_detail_email">Email</string>
+    <string name="contact_member_detail_phone">電話</string>
+    <string name="contact_member_detail_cellphone">手機號碼</string>
+    <string name="contact_member_detail_em_id">員工編號</string>
+    <string name="contact_member_detail_location">辦公地點</string>
+    <string name="contact_member_detail_supervisor">直屬主管</string>
+    <string name="contact_member_detail_deputy">職務代理人</string>
+    <string name="contact_member_detail_skill">職能</string>
+    <string name="contact_member_detail_interest">興趣</string>
+    <string name="contact_member_detail_intro">自我介紹</string>
+    <string name="title_activity_contact_chooser">ContactChooserActivity</string>
+
+    <!-- MainActivity -->
+    <string name="title_contacts_list">通訊錄</string>
+    <string name="title_conversion_list">對話</string>
+
+    <!-- ImChatListFragment -->
+    <string name="im_chat_list_time_yesterday">昨天</string>
+    <string name="im_chat_list_time_today">今天</string>
+    <string name="im_chat_list_empty">您目前沒有任何對話記錄</string>
+    <string name="im_chat_list_start_chat">開始新訊息</string>
+    <string name="im_chat_list_del_chat_record">刪除對話記錄</string>
+    <string name="im_chat_list_search_multiple">多人對話(%1$s)</string>
+    <string name="im_chat_list_search_group">群組(%1$s)</string>
+    <string name="im_chat_list_search_contact">聯絡人(%1$s)</string>
+    <string name="im_chat_list_search_chat">對話內容(%1$s)</string>
+    <string name="im_chat_list_search_chat_count">%1$s則相關的對話內容</string>
+    <string name="im_chat_list_leave_group_room">退出</string>
+    <string name="im_chat_list_leave_multiple_room">離開</string>
+
+
+    <!-- ImChatListFilterActivity -->
+    <string name="im_chat_list_filter_keyword_count_hint">共%1$s則與\"%2$s\"相關的對話內容</string>
+
+    <!-- ImMessageActivity -->
+    <string name="im_msg_single_chat_op_persional">個人資訊</string>
+    <string name="im_msg_single_chat_op_share_file">共享的檔案</string>
+    <string name="im_msg_single_chat_op_share_photo">共享的圖片</string>
+    <string name="im_msg_single_chat_op_close_ring">關閉通知</string>
+    <string name="im_msg_single_chat_op_add_member">新增成員</string>
+    <string name="im_msg_multiple_chat_op_members">成員清單</string>
+    <string name="im_msg_multiple_chat_op_share_file">共享的檔案</string>
+    <string name="im_msg_multiple_chat_op_share_photo">共享的圖片</string>
+    <string name="im_msg_multiple_chat_op_close_ring">關閉通知</string>
+    <string name="im_msg_multiple_chat_op_add_member">新增成員</string>
+    <string name="im_msg_multiple_chat_op_create_group">建立群組</string>
+    <string name="im_msg_multiple_chat_op_del">刪除對話</string>
+    <string name="im_msg_multiple_chat_op_quit">離開對話</string>
+    <string name="im_msg_group_chat_op_edit">編輯群組</string>
+    <string name="im_msg_group_chat_op_share_file">共享的檔案</string>
+    <string name="im_msg_group_chat_op_share_photo">共享的圖片</string>
+    <string name="im_msg_group_chat_op_close_ring">關閉通知</string>
+    <string name="im_msg_group_chat_op_add_member">新增成員</string>
+    <string name="im_msg_group_chat_op_del">刪除對話</string>
+    <string name="im_msg_group_chat_op_leave">退出群組</string>
+    <string name="im_msg_bottom_op_select_photo">選擇照片</string>
+    <string name="im_msg_bottom_op_take_photo">拍攝照片</string>
+    <string name="im_msg_bottom_op_new_attach">新增附件</string>
+
+    <!-- ImStartChatActivity -->
+    <string name="im_start_chat_title">選擇聯絡人</string>
+    <string name="im_start_chat_contact_search_hint">請輸入聯絡人名稱...</string>
+    <string name="im_start_chat_confirm_with_select_count">確定(%1$s)</string>
+    <string name="im_start_chat_string_append_sign">\u3001</string>
+    <string name="im_start_chat_contact_group_select_remind">群組僅提供單選</string>
+    <string name="im_start_chat_contact_group_show_user_count">%1$s位群組成員</string>
+
+    <!-- Announce -->
+    <string name="announce_title">公告</string>
+    <string name="announce_content">公告內容</string>
+    <string name="announce_list_item_type1">所有</string>
+    <string name="announce_list_item_type2">一般</string>
+    <string name="announce_list_item_type3">重要</string>
+    <string name="announce_list_item_type4">規範</string>
+    <string name="announce_spinner_type1">所有公告</string>
+    <string name="announce_spinner_type2">一般公告</string>
+    <string name="announce_spinner_type3">重要公告</string>
+    <string name="announce_spinner_type4">規範公告</string>
+    <string name="announce_detail_attach_preview">預覽</string>
+    <string name="announce_detail_attach_download">下載</string>
+    <string name="announce_detail_attach_count">個附件</string>
+
+    <!-- File preview -->
+    <string name="file_preview_title">檔案預覽</string>
+
+    <!-- login -->
+    <string name="login_login_uid_placehold">電子信箱</string>
+    <string name="login_login_pwd_placehold">密碼</string>
+    <string name="login_login_but">登入</string>
+    <string name="login_fail_no_network">連線失敗,請檢查網路連線</string>
+    <string name="no_network">網路連線異常</string>
+    <string name="login_fail_check_username_and_password">連線失敗,請重新輸入Email帳號與密碼</string>
+    <string name="login_no_input_password">請輸入密碼</string>
+    <string name="login_no_input_username">請輸入Email帳號</string>
+    <string name="ioexception_timeout">連線逾時</string>
+    <string name="login_data_error">資料錯誤</string>
+    <string name="forget_password"><u>忘記密碼?</u></string>
+    <string name="login_policy">隱私權政策</string>
+    <string name="login_service_terms">服務條款</string>
+    <string name="progress_login_wait">連線中…</string>
+    <string name="title_activity_file_preview">FilePreviewActivity</string>
+    <string name="login_keep_login">保持登入</string>
+    <string name="action_settings">Settings</string>
+    <!-- company -->
+    <string name="company_address">地址</string>
+    <string name="company_phone">電話</string>
+    <string name="company_fax">傳真</string>
+    <string name="company_phone_full">%1$s-%2$s#%3$s</string>
+    <string name="companyinfo_tab_intro">公司簡介</string>
+    <string name="companyinfo_tab_location">公司據點</string>
+    <string name="companyinfo_tab_resource">員工專區</string>
+    <string name="company_call">撥打電話</string>
+    <!-- company map -->
+    <string name="map_title">位置導覽</string>
+    <string name="map_tab_destination">目的位置</string>
+    <string name="map_tab_current">現在位置</string>
+    <string name="map_tab_all">全部位置</string>
+    <string name="map_tab_navi">路線規劃</string>
+    <!-- company navigation -->
+    <string name="map_researching">解析中…</string>
+    <string name="map_to_directions">切換至地圖 - 路線規劃</string>
+    <string name="map_open_gps">使用此功能請開啟定位服務</string>
+    <string name="map_open_network">使用此功能請開啟網路服務</string>
+    <string name="gps_searching_fail">定位尚未完成，請稍後或是重新啟動GPS再嘗試此功能。</string>
+    <string name="map_setting">設定</string>
+    <string name="map_ignore">取消</string>
+
+    <!-- alert dialog -->
+    <string name="alert_sure">確認</string>
+    <string name="alert_cancel">取消</string>
+
+    <!-- Photo upload -->
+    <string name="change_image">修改圖片</string>
+    <string name="upload_image">上傳圖片</string>
+    <string name="change_image_title">更換圖片</string>
+    <string name="title_activity_photo_upload">PhotoUploadActivity</string>
+    <string name="photo_upload_success">圖片上傳成功</string>
+    <string name="title_activity_announce_add">AnnounceAddActivity</string>
+
+    <!-- Notice -->
+    <string name="notice_send_activity_title">"新通知</string>
+    <string name="notice_send_edit_receiver">收件者：</string>
+    <string name="notice_send_edit_title">主旨：</string>
+    <string name="notice_send_edit_content">內文</string>
+    <string name="notice_detail_title">通知內容</string>
+    <string name="notice_detail_receiver_prefix">寄給</string>
+    <string name="notice_detail_receiver_count">共%1$s人</string>
+    <string name="notice_inbox_title">收件匣</string>
+    <string name="notice_outbox_title">寄件匣</string>
+    <string name="notice_starred_title">重要通知</string>
+
+</resources>

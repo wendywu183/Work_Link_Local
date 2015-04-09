@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--actionbar & Tab-->
+    <color name="actionBarTitleColor">#FF000000</color>
+    <color name="actionBarBgColor">#FFFFFFFF</color>
+    <color name="tabBgColor">#FFF6F6F6</color>
+    <color name="tab_indicator">#1170B7</color>
+    <color name="tab_bg_select">#32d7e2ff</color>
+    <color name="tab_icon_select">#1170B7</color>
+
+    <!--search view-->
+    <color name="search_hint_color">#CAC9CF</color>
+
+    <!--common-->
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent_black">#aa000000</color>
+    <color name="gray">#888888</color>
+    <color name="list_not_read_blue">#0059AF</color>
+    <color name="list_read_gray">#ABABAB</color>
+
+    <!-- The following naming will be refined later-->
+    <color name="BA">#9cd2ee</color>
+    <color name="BB">#157efa</color>
+    <color name="BC">#0000FF</color>
+
+
+    <color name="GA">#f7f7f7</color>
+    <color name="GB">#f8f8f8</color>
+    <color name="GC">#c8c9ca</color>
+    <color name="GD">#b4b4b4</color>
+    <color name="GE">#a0a0a0</color>
+    <color name="GF">#888888</color>
+
+    <color name="OA">#ffb93e</color>
+
+    <color name="trans_gray_indicator">#b5b5b5</color>
+    <color name="text_hint_gray">#ABABAB</color>
+    <color name="text_black">#454545</color>
+
+    <!-- MessageActivity -->
+    <color name="message_read_green">#29a740</color>
+
+    <!--contact-->
+    <color name="contact_expandable_group_bk">#F8F8F8</color>
+    <color name="contact_expandable_group_divider">#D4D4D4</color>
+    <color name="contact_detail_item_subtitle">#448CD1</color>
+    <color name="contact_detail_item_content">#494647</color>
+    <color name="contact_detail_item_title_bk">#EBEBF0</color>
+    <color name="contact_detail_item_title">#9C9D9E</color>
+    <color name="contact_detail_favorite">#FB4EAC</color>
+    <color name="contact_detail_call">#00B514</color>
+    <color name="contact_detail_message">#61BCE4</color>
+    <color name="contact_detail_email">#FDAD00</color>
+    <color name="contact_list_status_red">#EA4E50</color>
+    <color name="contact_list_status_green">#42A356</color>
+    <color name="contact_list_status_yellow">#FDB84C</color>
+    <color name="contact_list_status_gray">#A0A0A0</color>
+    <color name="contact_list_status_blue">#3EA9DB</color>
+
+    <!-- announce-->
+    <color name="announce_type_red">#B82025</color>
+    <color name="announce_type_green">#009500</color>
+    <color name="announce_type_blue">#0050AA</color>
+    <color name="announce_detail_attach_bg_gray">#F8F8F8</color>
+    <color name="announce_detail_pdf_color">#BCD6FA</color>
+
+    <!--home-->
+    <color name="home_item_attach_bg">#f4f9fc</color>
+
+</resources>

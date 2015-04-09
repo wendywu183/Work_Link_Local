@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/announce_list_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:dropDownWidth="match_parent" />
+
+    <ListView
+        android:id="@+id/announce_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/announce_list_spinner" />
+
+    <include
+        android:id="@+id/no_data_view"
+        layout="@layout/no_data_view" />
+
+</RelativeLayout>

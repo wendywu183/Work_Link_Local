@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom_layout"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="vertical"
+        android:transcriptMode="alwaysScroll"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/rl_on_data_loading"
+        layout="@layout/on_data_loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/v_chat_option_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_black"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_chat_option_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <GridView
+                    android:id="@+id/gv_chat_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/GA"
+                    android:gravity="fill_horizontal"
+                    android:horizontalSpacing="0dp"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/GA">
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/message_input_layout_hight">
+
+            <TextView
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:enabled="false"
+                android:text="@string/send"
+                android:textColor="@color/BC" />
+
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btn_send"
+                android:layout_toRightOf="@+id/iv_bottom_option"
+                android:background="@drawable/bg_im_message_input"
+                android:minHeight="@dimen/message_input_min_hight"
+                android:padding="5dp" />
+
+            <ImageView
+                android:id="@+id/iv_bottom_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/et_message"
+                android:layout_alignTop="@id/et_message"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:src="@drawable/ic_menu_add" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_chat_bottom_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_bottom_input_layout"
+            android:background="@color/GA"
+            android:gravity="fill_horizontal"
+            android:horizontalSpacing="0dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

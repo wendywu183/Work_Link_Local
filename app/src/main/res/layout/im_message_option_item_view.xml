@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_chat_option_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/GA">
+    <RelativeLayout
+        android:id="@+id/rl_chat_option_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chat_option_grid_item_hight"
+        android:layout_toLeftOf="@id/rl_chat_option_content_layout">
+        <ImageView
+            android:id="@+id/iv_chat_option_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_chat_option_text"
+            android:layout_centerHorizontal="true"
+            android:minHeight="38.0dp"
+            android:src="@drawable/ic_choose" />
+
+        <TextView
+            android:id="@+id/tv_chat_option_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Contacts"
+            android:textColor="@color/GF"
+            android:textSize="@dimen/font_size_small" />
+
+        <View
+            android:id="@+id/v_item_rightline"
+            android:layout_width="@dimen/chat_option_right_line_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/v_item_bottomline"
+            android:background="@color/GF"
+            android:contentDescription="@null" />
+
+        <View
+            android:id="@+id/v_item_bottomline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chat_option_bottom_line_hight"
+            android:layout_alignParentBottom="true"
+            android:background="@color/GF"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+</RelativeLayout>

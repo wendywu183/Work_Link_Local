@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/contact_member_detail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/contact_group_detail_photo_iv"
+                android:layout_width="@dimen/contact_detail_main_photo"
+                android:layout_height="@dimen/contact_detail_main_photo"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:id="@+id/contact_group_detail_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_group_detail_photo_iv"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/font_size_large"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/contact_group_detail_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_group_detail_name_tv"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/font_size_medium"
+                android:textColor="@color/text_hint_gray"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:id="@+id/option_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_group_detail_title_tv"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/contact_group_detail_message_iv"
+                    android:layout_width="@dimen/contact_member_detail_option_icon_size"
+                    android:layout_height="@dimen/contact_member_detail_option_icon_size"
+                    android:src="@drawable/ic_im" />
+
+                <ImageView
+                    android:id="@+id/email"
+                    android:layout_width="@dimen/contact_member_detail_option_icon_size"
+                    android:layout_height="@dimen/contact_member_detail_option_icon_size"
+                    android:layout_toRightOf="@+id/contact_group_detail_message_iv"
+                    android:layout_toEndOf="@+id/contact_group_detail_message_iv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/ic_mail" />
+
+                <ImageView
+                    android:id="@+id/call"
+                    android:layout_width="@dimen/contact_member_detail_option_icon_size"
+                    android:layout_height="@dimen/contact_member_detail_option_icon_size"
+                    android:layout_toRightOf="@+id/email"
+                    android:layout_toEndOf="@+id/email"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/ic_dial" />
+
+                <ImageView
+                    android:id="@+id/favorite"
+                    android:layout_width="@dimen/contact_member_detail_option_icon_size"
+                    android:layout_height="@dimen/contact_member_detail_option_icon_size"
+                    android:layout_toRightOf="@+id/call"
+                    android:layout_toEndOf="@+id/call"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/ic_favorite" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/option_layout"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/no_data_view"
+        layout="@layout/no_data_view"/>
+
+</RelativeLayout>

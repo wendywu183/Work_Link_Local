@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ImMessageActivity -->
+    <array name="im_msg_single_upper_op_icons">
+        <item>@drawable/test_ic_persional</item>
+        <item>@drawable/ic_folder</item>
+        <item>@drawable/ic_share</item>
+        <item>@drawable/ic_notify</item>
+        <item>@drawable/ic_choose</item>
+    </array>
+
+    <string-array name="im_msg_single_upper_op_titles">
+        <item>@string/im_msg_single_chat_op_persional</item>
+        <item>@string/im_msg_single_chat_op_share_file</item>
+        <item>@string/im_msg_single_chat_op_share_photo</item>
+        <item>@string/im_msg_single_chat_op_close_ring</item>
+        <item>@string/im_msg_single_chat_op_add_member</item>
+    </string-array>
+
+    <array name="im_msg_multiple_upper_op_icons">
+        <item>@drawable/ic_editgroup</item>
+        <item>@drawable/ic_folder</item>
+        <item>@drawable/ic_share</item>
+        <item>@drawable/ic_notify</item>
+        <item>@drawable/ic_choose</item>
+        <item>@drawable/test_ic_persional</item>
+        <item>@drawable/ic_delete</item>
+        <item>@drawable/ic_leavegroup</item>
+    </array>
+
+    <string-array name="im_msg_multiple_upper_op_titles">
+        <item>@string/im_msg_multiple_chat_op_members</item>
+        <item>@string/im_msg_multiple_chat_op_share_file</item>
+        <item>@string/im_msg_multiple_chat_op_share_photo</item>
+        <item>@string/im_msg_multiple_chat_op_close_ring</item>
+        <item>@string/im_msg_multiple_chat_op_add_member</item>
+        <item>@string/im_msg_multiple_chat_op_create_group</item>
+        <item>@string/im_msg_multiple_chat_op_del</item>
+        <item>@string/im_msg_multiple_chat_op_quit</item>
+    </string-array>
+
+
+    <array name="im_msg_group_upper_op_icons">
+        <item>@drawable/ic_editgroup</item>
+        <item>@drawable/ic_folder</item>
+        <item>@drawable/ic_share</item>
+        <item>@drawable/ic_notify</item>
+        <item>@drawable/ic_choose</item>
+        <item>@drawable/ic_delete</item>
+        <item>@drawable/ic_leavegroup</item>
+    </array>
+
+    <string-array name="im_msg_group_upper_op_titles">
+        <item>@string/im_msg_group_chat_op_edit</item>
+        <item>@string/im_msg_group_chat_op_share_file</item>
+        <item>@string/im_msg_group_chat_op_share_photo</item>
+        <item>@string/im_msg_group_chat_op_close_ring</item>
+        <item>@string/im_msg_group_chat_op_add_member</item>
+        <item>@string/im_msg_group_chat_op_del</item>
+        <item>@string/im_msg_group_chat_op_leave</item>
+    </string-array>
+
+    <array name="im_msg_bottom_op_icons">
+        <item>@drawable/ic_chooseimg</item>
+        <item>@drawable/ic_takephoto</item>
+        <item>@drawable/ic_paperclip</item>
+    </array>
+
+    <string-array name="im_msg_bottom_op_titles">
+        <item>@string/im_msg_bottom_op_select_photo</item>
+        <item>@string/im_msg_bottom_op_take_photo</item>
+        <item>@string/im_msg_bottom_op_new_attach</item>
+    </string-array>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/classes-af72a0f721d97c84a2813b3fcfa3fbd6fd1aa070.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/.gradle/caches/modules-2/files-2.1/org.java-websocket/Java-WebSocket/1.3.0/db2658f013fb163de4a99274c2eb9e17efe535d2/Java-WebSocket-1.3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="db2658f013fb163de4a99274c2eb9e17efe535d2">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/Java-WebSocket-1.3.0-6966e69c752cc922851ce4db2ea1e063c858a1a6.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-f6d0cc0690fd9a286e9d51284938145417bd488b.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-dfdac4325b78d3981ce693014834225109260f08.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/classes-cacd985c3b17c8c7c49a11538d6628491260e5f7.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/classes-901dff3c7fefaec0d888ce5d501193987a12329d.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/classes-24e8cc36f838817319520545cb3724c43798da45.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/.gradle/caches/modules-2/files-2.1/com.github.nkzawa/engine.io-client/0.3.1/3ca9d0d53a27ecb88538ed874be417cfa827db5d/engine.io-client-0.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3ca9d0d53a27ecb88538ed874be417cfa827db5d">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/engine.io-client-0.3.1-55d1c624565390da9c400b2a79556b7f9b04db1e.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/AndroidStudioProjects/workLink/app/libs/commons-codec.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fd32786786e2adb664d5ecc965da47629dca14ba">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/commons-codec-aff44da73d58a7521ab1d36738940d6ad2f451b2.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/AndroidStudioProjects/workLink/app/libs/sqlcipher.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9bbda56959cfe0a300ea789d47259c0e911d5d75">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/sqlcipher-996fdaf0a7c4512419f4422bf24a33fbee9e5348.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/AndroidStudioProjects/workLink/app/libs/guava-r09.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ef348209d301a97a96a0f57954d54f80244a1614">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/guava-r09-2f0e87f53e8a7ae87c3dbf326184787d5c268822.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/.gradle/caches/modules-2/files-2.1/com.github.nkzawa/socket.io-client/0.3.0/8dfd7cf8d1124acb027b3ffd53eafcc518af3ba9/socket.io-client-0.3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8dfd7cf8d1124acb027b3ffd53eafcc518af3ba9">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/socket.io-client-0.3.0-04ed88cf197d593257413dedb3a62725a80e15a5.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-8f0838381b4c9b4c48a3b9501ee088189c8e5711.jar" />
+    </item>
+    <item
+        jar="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/exploded-aar/com.makeramen/roundedimageview/1.5.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b2f7dddedcdb3facde33de103dcc32b10c43b92e">
+        <dex dex="/Users/wendywu/AndroidStudioProjects/workLink/app/build/intermediates/pre-dexed/debug/classes-d3458ef7fbf85c544ad831b0f666268b41a608ca.jar" />
+    </item>
+
+</items>

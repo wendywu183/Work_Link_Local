@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_filter_keyword_count_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BB"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="@string/im_chat_list_filter_keyword_count_hint"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_larger" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_filter_message_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_filter_keyword_count_hint" />
+
+</RelativeLayout>

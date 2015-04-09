@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_account_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <!--layout_width, layout_height, layout_margin maybe be care of different resolution. -->
+        <com.makeramen.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/riv_account_icon"
+            android:layout_width="@dimen/account_icon_width"
+            android:layout_height="@dimen/account_icon_hight"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_defaultuser"
+            app:riv_border_width="0dp"
+            app:riv_corner_radius="@dimen/account_icon_circle_radius"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            app:riv_tile_mode="repeat" />
+
+        <RelativeLayout
+            android:id="@+id/rl_account_online_status_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/riv_account_icon"
+            android:layout_alignRight="@id/riv_account_icon">
+            <!--layout_width, layout_height, maybe be care of different resolution. -->
+            <ImageView
+                android:id="@+id/iv_account_online_status_bg"
+                android:layout_width="@dimen/account_online_status_bg_width"
+                android:layout_height="@dimen/account_online_status_bg_hight"
+                android:layout_centerInParent="true"
+                android:src="@drawable/view_circle_white" />
+
+            <!--layout_width, layout_height, maybe be care of different resolution. -->
+            <ImageView
+                android:id="@+id/iv_account_online_status"
+                android:layout_width="@dimen/account_online_status_width"
+                android:layout_height="@dimen/account_online_status_hight"
+                android:layout_centerInParent="true"
+                android:src="@drawable/view_circle" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rl_account_icon"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/tv_date"
+        android:layout_toRightOf="@+id/rl_account_icon"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Marketing"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/font_size_medium" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rl_account_icon"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="4位群組成員"
+        android:textColor="@color/text_hint_gray"
+        android:textSize="@dimen/font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_center_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/rl_account_icon"
+        android:layout_alignTop="@id/rl_account_icon"
+        android:layout_alignBottom="@id/rl_account_icon"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/font_size_medium"
+        android:text="Contact"/>
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="2015/12/12"
+        android:textColor="@color/text_hint_gray"
+        android:textSize="@dimen/font_size_small"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="3dp"
+        android:background="@color/contact_expandable_group_divider" />
+</RelativeLayout>

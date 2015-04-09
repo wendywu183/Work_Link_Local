@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_hint_gray"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingBottom="1dp">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_hint_gray"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/divider">
+
+        <RelativeLayout
+            android:id="@+id/announce_detail_attach_type_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/announce_detail_attach_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_larger"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/announce_detail_description_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/announce_detail_attach_type_layout"
+            android:layout_toEndOf="@+id/announce_detail_attach_type_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/announce_detail_attach_bg_gray"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/announce_detail_attach_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@color/text_black" />
+
+            <TextView
+                android:id="@+id/announce_detail_attach_size_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/announce_detail_attach_name_tv"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@color/text_hint_gray" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
